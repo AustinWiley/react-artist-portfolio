@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {Component} from 'react'
 import Slide from "../Slide/Slide"
 
-function Slideshow() {
+class Slideshow extends Component {
 
-    const state = {
-      sideIndex: 1,
+
+    state = {
+      slideIndex,
       pigeons: ["Austin", "Sarah", "Emmry", "Haven"]
     }
 
-    // var slideIndex = 1;
+    var slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -33,18 +34,18 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  // slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
 }
 
 
-
+  render() {
     return (
       <>
 <div className="slideshow-container">
 
   
-  {state.pigeons.map(userName => {
+  {this.state.pigeons.map(userName => {
             return <Slide caption={userName} />
   })}
 
@@ -62,7 +63,7 @@ function showSlides(n) {
 </div>
 </>
     )
-
+  }
 }
 
 export default Slideshow;
