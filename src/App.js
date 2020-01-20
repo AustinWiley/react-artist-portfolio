@@ -11,6 +11,11 @@ import HOME from "./components/home";
 import Goodbye from "./components/page";
 import Users from "./components/users";
 
+import Slideshow from "./components/Slideshow/Slideshow";
+import Contact from "./components/Contact/Contact";
+import Cv from "./components/Cv/Cv";
+
+
 const state = {
   name: "Austin"
 };
@@ -48,6 +53,18 @@ function App() {
             <li>
               <Link to="/users">Users</Link>
             </li>
+            <li>
+              <Link to="/Paintings">Paintings</Link>
+            </li>
+            <li>
+              <Link to="/Chimes">Chimes</Link>
+            </li>
+            <li>
+              <Link to="/Cv">Cv</Link>
+            </li>
+            <li>
+              <Link to="/Contact">Contact</Link>
+            </li>
           </ul>
         </nav>
 
@@ -59,6 +76,18 @@ function App() {
           </Route>
           <Route path="/users">
             <Users />
+          </Route>
+          <Route path="/Chimes">
+            <Slideshow name={state.name}/>
+          </Route>
+          <Route path="/Paintings">
+            <Slideshow name={state.name}/>
+          </Route>
+          <Route path="/Cv">
+            <Cv name={state.name}/>
+          </Route>
+          <Route path="/Contact">
+            <Contact name={state.name}/>
           </Route>
           <Route path="/">
             <HOME name={state.name}/>
