@@ -5,11 +5,15 @@ import React from "react";
 // All of the props passed to this component are spread onto the input element
 function Slide(props) {
   return (
-<div className="mySlides fade">
-  <div className="numbertext">1 / 3</div>
-  <img src={props.image} style="width:100%" />
+    <>
+    {console.log(props.style)}
+<div className="mySlides fade" style={props.style}>
+<div className="numbertext">1 / 3 poop{props.caption}</div>
+  <img src={props.image} style={{width:"100%"}} />
 <div className="text">{props.caption}</div>
 </div>
+  <div>1 / 3hello{props.caption}</div>
+</>
 
   );
 }
