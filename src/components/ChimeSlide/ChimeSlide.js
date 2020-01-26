@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Slide from "../Slide/Slide";
-import Images from "../../paintings.json";
+import Chimes from "../../chimes.json";
 
-class PaintingSlide extends Component {
+class ChimeSlide extends Component {
   // Setting our component's initial state
   state = {
     slideIndex: 0,
-    images: Images,
+    images: Chimes,
     hide: {
       display: "none"
     },
@@ -58,7 +58,7 @@ nextSlide = event => {
         <div className="slideshow-container">
           <div className="inner">
             {this.state.images.map(image => {
-                return <Slide image={image.image} key={image.id} caption={""} slideNumber={(parseInt(image.id)+1)  + " / " + this.state.images.length } style={(this.state.slideIndex == image.id) ? this.state.show: this.state.hide } />
+                return <Slide image={image.image} key={image.id} caption={""} slideNumber={(parseInt(image.id) + 1)  + " / " + this.state.images.length } style={(this.state.slideIndex == image.id) ? this.state.show: this.state.hide } />
             })}
           </div>
 
@@ -76,4 +76,4 @@ nextSlide = event => {
       );
     }
   }
-export default PaintingSlide;
+export default ChimeSlide;

@@ -1,22 +1,30 @@
 [
     {
-    "id":"",
-    "image":"images/Chimes/1.jpg"
+    "id":"0",
+    "image":"images/Chimes/1.png"
     },
     {
-    "id":"",
-    "image":"images/Chimes/2.jpg"
+    "id":"1",
+    "image":"images/Chimes/2.png"
     },
     {
-    "id":"",
-    "image":"images/Chimes/3.jpg"
+    "id":"2",
+    "image":"images/Chimes/3.png"
     },
     {
-    "id":"",
-    "image":"images/Chimes/4.jpg"
+    "id":"3",
+    "image":"images/Chimes/4.png"
     },
     {
-    "id":"",
-    "image":"images/Chimes/5.jpg"
+    "id":"4",
+    "image":"images/Chimes/5.png"
+    },
+    {
+    "id":"5",
+    "image":"images/Chimes/6.png"
+    },
+    {
+    "id":"6",
+    "image":"images/Chimes/7.png"
     }
 ]

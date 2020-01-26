@@ -14,5 +14,21 @@
 {
 "id":"3",
 "image":"images/paintings/4.png"
+},
+{
+"id":"4",
+"image":"images/paintings/5.png"
+},
+{
+"id":"5",
+"image":"images/paintings/6.png"
+},
+{
+"id":"6",
+"image":"images/paintings/7.png"
+ },
+{
+"id":"7",
+"image":"images/paintings/8.png"
 }
 ]

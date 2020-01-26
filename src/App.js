@@ -12,6 +12,7 @@ import Goodbye from "./components/page";
 import Users from "./components/users";
 
 import PaintingSlide from "./components/PaintingSlide/PaintingSlide";
+import ChimeSlide from "./components/ChimeSlide/ChimeSlide";
 import Contact from "./components/Contact/Contact";
 import Cv from "./components/Cv/Cv";
 
@@ -79,7 +80,7 @@ function App() {
             <Users />
           </Route>
           <Route path="/Chimes">
-            <PaintingSlide name={"Chimes"}/>
+            <ChimeSlide name={"Chimes"}/>
           </Route>
           <Route path="/Paintings">
             <PaintingSlide name={"Paintings"}/>
