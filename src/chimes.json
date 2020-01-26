@@ -1,14 +1,22 @@
 [
     {
     "id":"",
-    "image":"images/Chimes/Backend.jpg"
+    "image":"images/Chimes/1.jpg"
     },
     {
     "id":"",
-    "image":"images/Chimes/image (4).jpg"
+    "image":"images/Chimes/2.jpg"
     },
     {
     "id":"",
-    "image":"images/Chimes/image (5).jpg"
+    "image":"images/Chimes/3.jpg"
+    },
+    {
+    "id":"",
+    "image":"images/Chimes/4.jpg"
+    },
+    {
+    "id":"",
+    "image":"images/Chimes/5.jpg"
     }
 ]

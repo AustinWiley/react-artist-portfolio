@@ -11,7 +11,7 @@ import HOME from "./components/home";
 import Goodbye from "./components/page";
 import Users from "./components/users";
 
-import Slideshow from "./components/Slideshow/Slideshow";
+import PaintingSlide from "./components/PaintingSlide/PaintingSlide";
 import Contact from "./components/Contact/Contact";
 import Cv from "./components/Cv/Cv";
 
@@ -79,10 +79,10 @@ function App() {
             <Users />
           </Route>
           <Route path="/Chimes">
-            <Slideshow name={state.name}/>
+            <PaintingSlide name={"Chimes"}/>
           </Route>
           <Route path="/Paintings">
-            <Slideshow name={state.name}/>
+            <PaintingSlide name={"Paintings"}/>
           </Route>
           <Route path="/Cv">
             <Cv name={state.name}/>

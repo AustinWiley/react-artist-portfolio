@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Slide from "../Slide/Slide"
-import Images from "../../paintings.json"
+import Slide from "../Slide/Slide";
+import Images from "../../paintings.json";
+import Chimes from "../../chimes.json";
 
-class Slideshow extends Component {
+class PaintingSlide extends Component {
   // Setting our component's initial state
   state = {
     slideIndex: 0,
-    pigeons: ["Austin", "Sarah", "Emmry", "Haven"],
     images: Images,
     hide: {
       display: "none"
@@ -14,11 +14,13 @@ class Slideshow extends Component {
     show: {
       display: "block"
     },
+    page: this.props.name
   };
 
   // When the component mounts, load all books and save them to this.state.books
   // componentDidMount() {
-  //   this.setState({ slideIndex: 0})
+  //   console.log("component did mounat")
+  //   this.setState({ slideIndeximages: Images})
   // }
 
 nextSlide = event => {
@@ -53,28 +55,19 @@ nextSlide = event => {
 
   render() {
     return (
-        <>
-            <div className="slideshow-container">
-              {console.log("rersnder!!!!!!!!!!!!")}
+      <>
+        <div className="slideshow-container">
+          <div className="inner">
+            {this.state.images.map(image => {
+                return <Slide image={image.image} key={image.id} caption={image.image} style={(this.state.slideIndex == image.id) ? this.state.show: this.state.hide } />
+            })}
+          </div>
 
-                {this.state.images.map(image => {
-                  console.log(this.state.images)
-                    return <Slide image={image.image} key={image.id} caption={image.image} style={(this.state.slideIndex == image.id) ? this.state.show: this.state.hide } />
-                })}
-
-<p>Look at all the pigeons spotted today!</p>
-        <ul>
-          {this.state.pigeons.map(userName => {
-            return <li>{userName}</li>
-          })}
-        </ul>
-
-                <a className="prev" onClick={this.prevSlide}>&#10094;</a>
-                <a className="next" onClick={this.nextSlide}>&#10095;</a>
-            </div>
-            <br />
-
-
+          <a className="prev" onClick={this.prevSlide}>&#10094;</a>
+          <a className="next" onClick={this.nextSlide}>&#10095;</a>
+        </div>
+        <br />
+            <h1>{this.state.page}</h1>
             {/* <div style="text-align:center">
                 <span className="dot" onclick="currentSlide(1)"></span>
                 <span classNamer="dot" onclick="currentSlide(2)"></span>
@@ -84,4 +77,4 @@ nextSlide = event => {
       );
     }
   }
-export default Slideshow;
+export default PaintingSlide;
