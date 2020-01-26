@@ -41,9 +41,10 @@ function App() {
   // );
   return (
     <Router>
-      <div>
+      <div className="main">
         <nav>
-          <ul>
+        <h2>Hello there</h2>
+          <ul id="x">
             <li>
               <Link to="/">Home</Link>
             </li>
