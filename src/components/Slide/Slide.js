@@ -6,7 +6,7 @@ function Slide(props) {
     <>
       <div className="mySlides fade" style={props.style}>
         <div className="numbertext">{props.slideNumber}</div>
-        <img src={props.image} style={{width:"100%"}} />
+        <img src={props.image} />
         <div className="text">{props.caption}</div>
       </div>
       <div>{props.caption}</div>

@@ -66,7 +66,6 @@ nextSlide = event => {
           <a className="next" onClick={this.nextSlide}>&#10095;</a>
         </div>
         <br />
-            <h1>{this.state.page}</h1>
             {/* <div style="text-align:center">
                 <span className="dot" onclick="currentSlide(1)"></span>
                 <span classNamer="dot" onclick="currentSlide(2)"></span>

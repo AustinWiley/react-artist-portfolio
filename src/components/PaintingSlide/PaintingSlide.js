@@ -58,7 +58,7 @@ nextSlide = event => {
         <div className="slideshow-container">
           <div className="inner">
             {this.state.images.map(image => {
-                return <Slide image={image.image} key={image.id} caption={""} slideNumber={(parseInt(image.id)+1)  + " / " + this.state.images.length } style={(this.state.slideIndex == image.id) ? this.state.show: this.state.hide } />
+                return <Slide image={image.image} key={image.id} caption={""} slideNumber={(parseInt(image.id) + 1)  + " / " + this.state.images.length } style={(this.state.slideIndex == image.id) ? this.state.show: this.state.hide } />
             })}
           </div>
 
@@ -66,7 +66,6 @@ nextSlide = event => {
           <a className="next" onClick={this.nextSlide}>&#10095;</a>
         </div>
         <br />
-            <h1>{this.state.page}</h1>
             {/* <div style="text-align:center">
                 <span className="dot" onclick="currentSlide(1)"></span>
                 <span classNamer="dot" onclick="currentSlide(2)"></span>

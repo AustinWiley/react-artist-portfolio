@@ -1,18 +1,16 @@
 import React from 'react';
 import './App.css';
+import PaintingSlide from "./components/PaintingSlide/PaintingSlide";
+import ChimeSlide from "./components/ChimeSlide/ChimeSlide";
+import Contact from "./components/Contact/Contact";
+import About from "./components/About/About";
+import Cv from "./components/Cv/Cv";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-
-import PaintingSlide from "./components/PaintingSlide/PaintingSlide";
-import ChimeSlide from "./components/ChimeSlide/ChimeSlide";
-import Contact from "./components/Contact/Contact";
-import About from "./components/About/About";
-import Cv from "./components/Cv/Cv";
-
 
 const state = {
   name: "Austin"
@@ -26,19 +24,19 @@ function App() {
         <h2>Hello there</h2>
           <ul id="x">
             <li>
-              <Link to="/">About</Link>
+              <Link to="/" className="link">About</Link>
             </li>
             <li>
-              <Link to="/Paintings">Paintings</Link>
+              <Link to="/Paintings" className="link">Paintings</Link>
             </li>
             <li>
-              <Link to="/Chimes">Chimes</Link>
+              <Link to="/Chimes" className="link">Chimes</Link>
             </li>
             <li>
-              <Link to="/Cv">Cv</Link>
+              <Link to="/Cv" className="link">Cv</Link>
             </li>
             <li>
-              <Link to="/Contact">Contact</Link>
+              <Link to="/Contact" className="link">Contact</Link>
             </li>
           </ul>
         </nav>
