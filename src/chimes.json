@@ -1,11 +1,11 @@
 [
     {
     "id":"0",
-    "image":"images/Chimes/1.png"
+    "image":"./images/chimes/1.png"
     },
     {
     "id":"1",
-    "image":"images/Chimes/2.png"
+    "image":"./images/chimes/2.png"
     },
     {
     "id":"2",
