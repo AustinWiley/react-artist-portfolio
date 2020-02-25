@@ -9,22 +9,22 @@
     },
     {
     "id":"2",
-    "image":"images/Chimes/3.png"
+    "image":"./images/chimes/3.png"
     },
     {
     "id":"3",
-    "image":"images/Chimes/4.png"
+    "image":"./images/chimes/4.png"
     },
     {
     "id":"4",
-    "image":"images/Chimes/5.png"
+    "image":"./images/chimes/5.png"
     },
     {
     "id":"5",
-    "image":"images/Chimes/6.png"
+    "image":"./images/chimes/6.png"
     },
     {
     "id":"6",
-    "image":"images/Chimes/7.png"
+    "image":"./images/chimes/7.png"
     }
 ]
